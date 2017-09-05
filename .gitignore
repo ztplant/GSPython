@@ -103,3 +103,4 @@ ENV/
 # personal
 .DS_Store
 config.py
+.idea/*
