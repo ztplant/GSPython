@@ -28,7 +28,7 @@ def insert_value(month):
                 insert_value.append((e["playId"],e["userId"],e["videoId"],e["playDuration"],e["stayDuration"],e["currentTimes"],
                                      e["duration"],e["flowSize"],e["sessionId"],e["param1"],e["param2"],e["param3"],e["param4"],
                                      e["param5"],e["ipAddress"],e["country"],e["province"],e["city"],e["isp"],e["referer"],
-                                     e["userAgent"],e["operatingSystem"],e["browser"],e["isMobile"],e["currentDay"],e["currentHour"],
+                                     e["userAgent"],e["operatingSystem"],e["browser"],e["isMobile"],e["currentDay"].replace('-',''),e["currentHour"],
                                      e["createdTime"],e["lastModified"]))
             local_db.execute(g_insert_sql, insert_value)
             print(day)
