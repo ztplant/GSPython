@@ -5,9 +5,9 @@ from odps import ODPS
 from config import ODPSCONF
 
 
-O = ODPS(ODPSCONF.key, ODPSCONF.sec, 'sync_data', endpoint='http://service.odpssc.aliyun.com/api')
+O = ODPS(ODPSCONF.key, ODPSCONF.sec, 'sync_data', endpoint='http://service.odps.aliyun.com/api')
 
-f = open('odps_ddl_0927.txt','a')
+f = open('odps_ddl_1208.txt','a')
 
 i = 1
 s = ''
